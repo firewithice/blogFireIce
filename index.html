@@ -3,6 +3,7 @@
  
  <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <title>fireiceo博客</title>
 	<script src="https://cdn.bootcss.com/marked/0.3.6/marked.js"></script>
 
@@ -43,15 +44,16 @@
 **fireice**
 > 不要放弃,坚持到底.——myself
 
-![](http://img2.imgtn.bdimg.com/it/u=2301772021,137103325&fm=23&gp=0.jpg)
 
+<img src="http://img2.imgtn.bdimg.com/it/u=2301772021,137103325&fm=23&gp=0.jpg"  width = 300 alt="唯美" title = "唯美" />
 
 
 
 `
 
 			var html = marked(markdown);
-
+// 图片这样引用
+//![](http://img2.imgtn.bdimg.com/it/u=2301772021,137103325&fm=23&gp=0.jpg)
 			document.getElementById('content').innerHTML = html;
 		</script>
 	</body>
