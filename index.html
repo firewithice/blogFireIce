@@ -2,31 +2,58 @@
 <html>
  
  <head>
-    
-  <title>我的第一个页面</title>
-  <style>
+    <meta charset="utf-8">
+  <title>fireiceo博客</title>
+	<script src="https://cdn.bootcss.com/marked/0.3.6/marked.js"></script>
+
+		<!-- typo.sofi.sh-->
+
+		<link rel="stylesheet" href="http://typo.sofi.sh/typo.css" />
+	</head>
+	<style type="text/css">
    *{
     padding:0;
     margin:0;
    }
-   div{
+/*    div{
     width:800px;
     height:600px;
     border:1px solid black;
     margin:0 auto;
     color:white;
     background-color:darkgray;
-   }
-   
-   
-  </style>  
- </head>
-    <body>
-     <div>
-     原来并不是只有在io仓库创建才能上线看的哦！
-     
-     </div>
-    
-    </body>
+   } */
+		body {
+			padding: 20px;
+		}
+	</style>
+
+	<body>
+
+		<div id="content"></div>
+		<script type="text/javascript">
+			var markdown =
+				`
+# Marked in browser\n\nRendered by **marked**.
+
+[百度](https://baidu.com)
+
+# 第一篇博客
+
+**fireice**
+> 不要放弃,坚持到底.——myself
+
+![](http://img2.imgtn.bdimg.com/it/u=2301772021,137103325&fm=23&gp=0.jpg)
+
+
+
+
+`
+
+			var html = marked(markdown);
+
+			document.getElementById('content').innerHTML = html;
+		</script>
+	</body>
     
 </html>
